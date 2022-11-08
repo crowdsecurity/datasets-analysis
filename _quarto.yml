@@ -10,10 +10,11 @@ website:
   repo-actions: [edit, issue]
   page-navigation: true
   navbar:
-    center:
+    logo: assets/favicon.png
+    logo-alt: "CrowdSec logo."
+    left:
       - href: index.qmd
         text: Home
-
     right:
       - icon: twitter
         href: https://twitter.com/Crowd_Security
@@ -46,5 +47,5 @@ format:
     css: styles.css
     toc: true
 
-freeze: false
+freeze: true
 
