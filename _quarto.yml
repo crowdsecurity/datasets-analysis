@@ -1,0 +1,51 @@
+project:
+  type: website
+
+website:
+  title: "CrowdSec Data Showcase"
+  image: "assets/crowdsec_logo.png"
+  favicon: "assets/favicon.png"
+  site-url: https://crowdsec.net
+  repo-url: https://github.com/crowdsecurity/datasets-analysis
+  repo-actions: [edit, issue]
+  page-navigation: true
+  navbar:
+    center:
+      - href: index.qmd
+        text: Home
+
+    right:
+      - icon: twitter
+        href: https://twitter.com/Crowd_Security
+        aria-label: CrowdSec Twitter
+      - icon: github
+        href: https://github.com/crowdsecurity/crowdsec
+        aria-label: CrowdSec GitHub
+  sidebar:
+    style: "floating"
+    # style: "docked"
+    search: true
+    collapse-level: 2
+    align: left
+    contents:
+      - section: "Community Blocklist"
+        contents:
+          - href: 0001-twin-machines/analysis.ipynb
+            text: Twin Machines
+  page-footer:
+    right:
+    - icon: twitter
+      href: https://twitter.com/Crowd_Security
+      aria-label: CrowdSec Twitter
+    - icon: github
+      href: https://github.com/crowdsecurity/crowdsec
+      aria-label: CrowdSec GitHub
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+freeze: true
+
+
