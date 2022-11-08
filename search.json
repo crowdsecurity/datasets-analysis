@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "0001-twin-machines/analysis.html",
+    "href": "0001-twin-machines/analysis.html",
+    "title": "Twin Machines",
+    "section": "",
+    "text": "column\ndtype\ndescription\nSample\n\n\n\n\ndate\ndatetime64[ns]\nDate of the report\n2022-01-08 0:00:00\n\n\nversion_number\nobject\nCrowdSec version number\nv1.2.2\n\n\nscenario\nobject\nName of the crowdsec scenario\ncrowdsecurity/ssh-slow-bf\n\n\nwatcher_id\nInt64\nid of the watcher installation\n111566\n\n\nip\nobject\nReported IP\n31.184.198.71\n\n\nid\nInt64\nReported IP ID\n153806\n\n\nrdns\nobject\nRDNS for the Reported IP\nnan\n\n\ncountry\nobject\nCountry for the Reported IP\nRU\n\n\nas_num\nInt64\nAS Nunber for the Reported IP\n34665\n\n\nas_name\nobject\nAutonomous System Organization Name\nPetersburg Internet Network ltd.\n\n\nConfig\nobject\nType of the machine in the article\nMachineA#NoBouncer\n\n\nscenario_category\nobject\nHigh-level category for each scenario\nBruteforce\n\n\nmalevolence_score\nint64\nMalevolence score for the reported IP graded by the CrowdSec API\n5"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#number-of-alerts-and-ips",
+    "href": "0001-twin-machines/analysis.html#number-of-alerts-and-ips",
+    "title": "Twin Machines",
+    "section": "Number of alerts and IPs",
+    "text": "Number of alerts and IPs\n\n\n\n\n\n\n  \n    \n      \n      ips_reported\n      n_alerts\n    \n    \n      Config\n      \n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      149\n      1973\n    \n    \n      MachineB#Bouncer\n      91\n      168"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#number-of-average-alerts-per-day",
+    "href": "0001-twin-machines/analysis.html#number-of-average-alerts-per-day",
+    "title": "Twin Machines",
+    "section": "Number of Average Alerts per Day",
+    "text": "Number of Average Alerts per Day\n\n\n\n\n\n\n  \n    \n      \n      average_alerts_per_day\n    \n    \n      Config\n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      24.974684\n    \n    \n      MachineB#Bouncer\n      3.294118"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#average-number-of-alerts-per-ips",
+    "href": "0001-twin-machines/analysis.html#average-number-of-alerts-per-ips",
+    "title": "Twin Machines",
+    "section": "Average NUmber of Alerts per IPs",
+    "text": "Average NUmber of Alerts per IPs\n\n\n\n\n\n\n  \n    \n      \n      average_alerts_per_ip\n    \n    \n      Config\n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      13.241611\n    \n    \n      MachineB#Bouncer\n      1.846154"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#plotly-config-optional",
+    "href": "0001-twin-machines/analysis.html#plotly-config-optional",
+    "title": "Twin Machines",
+    "section": "Plotly config (optional)",
+    "text": "Plotly config (optional)"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#viz-routines",
+    "href": "0001-twin-machines/analysis.html#viz-routines",
+    "title": "Twin Machines",
+    "section": "Viz routines",
+    "text": "Viz routines"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#number-of-unique-ips-reported",
+    "href": "0001-twin-machines/analysis.html#number-of-unique-ips-reported",
+    "title": "Twin Machines",
+    "section": "Number of Unique IPs reported",
+    "text": "Number of Unique IPs reported"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#alerts",
+    "href": "0001-twin-machines/analysis.html#alerts",
+    "title": "Twin Machines",
+    "section": "Alerts",
+    "text": "Alerts"
+  },
+  {
+    "objectID": "0001-twin-machines/analysis.html#scenario-distribution-and-ip-score",
+    "href": "0001-twin-machines/analysis.html#scenario-distribution-and-ip-score",
+    "title": "Twin Machines",
+    "section": "Scenario distribution and IP Score",
+    "text": "Scenario distribution and IP Score"
+  },
+  {
+    "objectID": "0001-twin-machines/data/LICENSE.html",
+    "href": "0001-twin-machines/data/LICENSE.html",
+    "title": "CrowdSec Data Showcase",
+    "section": "",
+    "text": "Data shared in this repository are licensed under a Creative Commons Attribution 4.0 International License."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CrowdSec Data",
+    "section": "",
+    "text": "crowdsec_logo"
+  },
+  {
+    "objectID": "LICENSE.html",
+    "href": "LICENSE.html",
+    "title": "CrowdSec Data Showcase",
+    "section": "",
+    "text": "Copyright (c) 2022 Crowdsec\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nTHE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+  }
+]
