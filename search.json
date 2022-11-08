@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "CrowdSec Data",
+    "section": "",
+    "text": "crowdsec_logo"
+  },
+  {
+    "objectID": "0001-twin-machines/data/LICENSE.html",
+    "href": "0001-twin-machines/data/LICENSE.html",
+    "title": "CrowdSec Data Showcase",
+    "section": "",
+    "text": "Data shared in this repository are licensed under a Creative Commons Attribution 4.0 International License."
+  },
+  {
     "objectID": "0001-twin-machines/analysis.html",
     "href": "0001-twin-machines/analysis.html",
     "title": "Twin Machines",
@@ -61,20 +75,6 @@
     "title": "Twin Machines",
     "section": "Scenario distribution and IP Score",
     "text": "Scenario distribution and IP Score"
-  },
-  {
-    "objectID": "0001-twin-machines/data/LICENSE.html",
-    "href": "0001-twin-machines/data/LICENSE.html",
-    "title": "CrowdSec Data Showcase",
-    "section": "",
-    "text": "Data shared in this repository are licensed under a Creative Commons Attribution 4.0 International License."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "CrowdSec Data",
-    "section": "",
-    "text": "crowdsec_logo"
   },
   {
     "objectID": "LICENSE.html",
