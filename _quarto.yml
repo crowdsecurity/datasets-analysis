@@ -5,7 +5,7 @@ website:
   title: "CrowdSec Data Showcase"
   image: "assets/crowdsec_logo.png"
   favicon: "assets/favicon.png"
-  site-url: https://crowdsec.net
+  # site-url: https://crowdsec.net
   repo-url: https://github.com/crowdsecurity/datasets-analysis
   repo-actions: [edit, issue]
   page-navigation: true
