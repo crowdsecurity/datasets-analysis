@@ -1,6 +1,7 @@
+![GitHub Pages](https://github.com/crowdsecurity/dataset-analysis/actions/workflows/publish.yml/badge.svg)
 # Dataset Analysis
 
-Showcasing CrowdSec data publicly
+Showcasing CrowdSec data publicly on : https://crowdsecurity.github.io/datasets-analysis/
 
 # Architecture
 
