@@ -33,6 +33,8 @@ website:
         contents:
           - href: 0001-twin-machines/analysis.ipynb
             text: Twin Machines
+          - href: 0002-twin-machines-article/analysis.ipynb
+            text: Twin Machines (Blog)
   page-footer:
     right:
     - icon: twitter
