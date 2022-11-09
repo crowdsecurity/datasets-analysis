@@ -7,6 +7,62 @@
     "text": "crowdsec_logo"
   },
   {
+    "objectID": "0002-twin-machines-article/analysis.html",
+    "href": "0002-twin-machines-article/analysis.html",
+    "title": "Twin Machines (Blog Post)",
+    "section": "",
+    "text": "original article posted on CrowdSec Blog: here"
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#the-difference-in-numbers",
+    "href": "0002-twin-machines-article/analysis.html#the-difference-in-numbers",
+    "title": "Twin Machines (Blog Post)",
+    "section": "The difference in numbers",
+    "text": "The difference in numbers\n\n\n                                                \n\n\nFirst of all, machine A (no bouncer) went through what you would expect from a machine exposed on the Internet: 1937 attacks over 12 weeks.\nOn the other hand, machine B (with the bouncer) was attacked only 167 times over 12 weeks.\n\n\n                                                \n\n\nIt is important to note that machine B was not only able to see fewer attacks thanks to the installed firewall bouncer that would stop attacks as they happened. It actually prevented 91% of attacks because bad guys were preemptively blocked by the community blocklist.\nIn terms of distinct IPs seen by each machine, machine A spotted 146 distinct IPs, while machine B only 90. The difference is the number of IPs that were in the community blocklist before they even attacked machine B.\nThat’s a diminution of 91% of attacks and 38% in terms of the distinct number of attackers."
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#further-analysis",
+    "href": "0002-twin-machines-article/analysis.html#further-analysis",
+    "title": "Twin Machines (Blog Post)",
+    "section": "Further analysis",
+    "text": "Further analysis\nTwo things are in play here:\nThe machine without the bouncer has the ability to detect attacks thanks to the CrowdSec agent. It is plugged into the logs of SSH and NGINX and thus will detect the usual background noise created by scanning activity. Due to CrowdSec’s low-alert output design, one IP is not too likely to generate several alerts, unless the attack lasts for a long time.\nThe machine with the bouncer on the other hand, while detecting the same attacks, has the ability to stop them as soon as they happen. But, more importantly, it preemptively blocks a lot of bad IPs thanks to the community blocklist What about IPs that were detected and blocked afterward on machine B? Could the CrowdSec community spot and block this upfront?\nTo answer that question, we checked those IP addresses against our CTI, as one can do in the CrowdSec console, and the results are quite insightful. See ?@fig-cti-scores\nThe vast majority of those IP addresses (92%) are so notoriously known by the CrowdSec community that they are part of the community blocklist. When it comes to the remaining IPs, only 5% have a moderate or low confidence level."
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#whats-next",
+    "href": "0002-twin-machines-article/analysis.html#whats-next",
+    "title": "Twin Machines (Blog Post)",
+    "section": "What’s next",
+    "text": "What’s next\nThe CrowdSec community starts to really pull its own weight: the overall majority of attacks are preemptively stopped by the community blocklist, and the remaining malevolent IPs are very well known by the community. We’re working on leveraging this data to make sysadmins and SecOps life easier on a daily basis!\nThis quick study gives a strong indication of how a crowd-powered IP blocklist - combined with a curation mechanism, can strengthen the security level of CrowdSec users. In addition, it allows users to focus on the most significant and impactful attack signals, instead of losing time and resources exploring IP activity that is already well known by the community.\nNote: The data collected by CrowdSec on these 2 machines and the charts generated are made available publicly in this Github repository."
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#data-description",
+    "href": "0002-twin-machines-article/analysis.html#data-description",
+    "title": "Twin Machines (Blog Post)",
+    "section": "Data Description",
+    "text": "Data Description\n\n\n\n\n\n\n\n\n\ncolumn\ndtype\ndescription\nSample\n\n\n\n\ndate\ndatetime64[ns]\nDate of the report\n2022-01-08 0:00:00\n\n\nversion_number\nobject\nCrowdSec version number\nv1.2.2\n\n\nscenario\nobject\nName of the crowdsec scenario\ncrowdsecurity/ssh-slow-bf\n\n\nwatcher_id\nInt64\nid of the watcher installation\n111566\n\n\nip\nobject\nReported IP\n31.184.198.71\n\n\nid\nInt64\nReported IP ID\n153806\n\n\nrdns\nobject\nRDNS for the Reported IP\nnan\n\n\ncountry\nobject\nCountry for the Reported IP\nRU\n\n\nas_num\nInt64\nAS Nunber for the Reported IP\n34665\n\n\nas_name\nobject\nAutonomous System Organization Name\nPetersburg Internet Network ltd.\n\n\nConfig\nobject\nType of the machine in the article\nMachineA#NoBouncer\n\n\nscenario_category\nobject\nHigh-level category for each scenario\nBruteforce\n\n\nmalevolence_score\nint64\nMalevolence score for the reported IP graded by the CrowdSec API\n5"
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#number-of-alerts-and-ips",
+    "href": "0002-twin-machines-article/analysis.html#number-of-alerts-and-ips",
+    "title": "Twin Machines (Blog Post)",
+    "section": "Number of alerts and IPs",
+    "text": "Number of alerts and IPs\n\n\n\n\n\n\n  \n    \n      \n      ips_reported\n      n_alerts\n    \n    \n      Config\n      \n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      149\n      1973\n    \n    \n      MachineB#Bouncer\n      91\n      168"
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#number-of-average-alerts-per-day",
+    "href": "0002-twin-machines-article/analysis.html#number-of-average-alerts-per-day",
+    "title": "Twin Machines (Blog Post)",
+    "section": "Number of Average Alerts per Day",
+    "text": "Number of Average Alerts per Day\n\n\n\n\n\n\n  \n    \n      \n      average_alerts_per_day\n    \n    \n      Config\n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      24.974684\n    \n    \n      MachineB#Bouncer\n      3.294118"
+  },
+  {
+    "objectID": "0002-twin-machines-article/analysis.html#average-number-of-alerts-per-ips",
+    "href": "0002-twin-machines-article/analysis.html#average-number-of-alerts-per-ips",
+    "title": "Twin Machines (Blog Post)",
+    "section": "Average NUmber of Alerts per IPs",
+    "text": "Average NUmber of Alerts per IPs\n\n\n\n\n\n\n  \n    \n      \n      average_alerts_per_ip\n    \n    \n      Config\n      \n    \n  \n  \n    \n      MachineA#NoBouncer\n      13.241611\n    \n    \n      MachineB#Bouncer\n      1.846154"
+  },
+  {
     "objectID": "0001-twin-machines/data/LICENSE.html",
     "href": "0001-twin-machines/data/LICENSE.html",
     "title": "CrowdSec Data Showcase",
