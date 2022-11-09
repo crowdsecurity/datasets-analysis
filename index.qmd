@@ -1,0 +1,8 @@
+---
+title: "CrowdSec Data"
+jupyter: python3
+---
+
+This website contains showcase the data used to write the articles for CrowdSec. The list is available on the left side of the page
+
+![crowdsec_logo](assets/crowdsec_logo.png)

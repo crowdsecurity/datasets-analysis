@@ -1,7 +1,17 @@
+![GitHub Pages](https://github.com/crowdsecurity/dataset-analysis/actions/workflows/publish.yml/badge.svg)
 # Dataset Analysis
 
-Showcasing CrowdSec data publicly
+Showcasing CrowdSec data publicly on: https://crowdsecurity.github.io/datasets-analysis/
 
+# Publish website
+
+Run locally:
+
+```bash
+pip install -r requirements.txt
+pip install -r 0001-twin-machines/requirements.txt
+quarto render # that's it
+```
 # Architecture
 
 ```
